@@ -12,25 +12,31 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_margin="30dp"
-        android:orientation="horizontal"
-        android:padding="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/view_redonda_menu"
         android:gravity="center"
-        android:background="@drawable/view_redonda_menu">
+        android:orientation="horizontal"
+        android:padding="15dp">
+
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:background="@drawable/icono_chat"/>
+            android:background="@drawable/icono_chat" />
+
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/icono_historial"/>
+            android:background="@drawable/icono_historial" />
+
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/icono_chat"/>
+            android:background="@drawable/icono_chat" />
 
         <ImageView
             android:layout_width="30dp"
@@ -53,10 +59,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/view_redonda_amarilla"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="120dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/view_redonda_amarilla"
 
         ></RelativeLayout>
 
