@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/c_Fondo">
+    android:background="@color/c_Fondo"
+    tools:context=".Jugar">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_column="0"
-        app:layout_row="0">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -28,30 +27,8 @@
 
         </RelativeLayout>
 
-        <!--        <androidx.gridlayout.widget.GridLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="370dp"-->
-        <!--            android:layout_alignParentTop="true"-->
-        <!--            android:layout_marginHorizontal="20dp"-->
-        <!--            android:layout_marginTop="20dp"-->
-        <!--            android:layout_marginBottom="20dp"-->
-        <!--            android:background="@color/purple_200"-->
-        <!--            app:columnCount="8"-->
-        <!--            app:rowCount="8">-->
-
-
-        <!--        </androidx.gridlayout.widget.GridLayout>-->
-
-        <!--        <View-->
-        <!--            android:id="@+id/tableroCanvas"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="370dp"-->
-        <!--            android:background="@color/purple_200"-->
-        <!--            android:layout_marginTop="20dp"-->
-        <!--            android:layout_marginBottom="20dp"-->
-        <!--            >-->
-        <!--        </View>-->
         <eina.unizar.bibliochill.components.CanvasTablero
+            android:id="@+id/tablero"
             android:layout_width="match_parent"
             android:layout_height="370dp"
             android:layout_marginHorizontal="20dp"
@@ -65,7 +42,9 @@
             android:layout_alignParentTop="true"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/view_redonda_amarilla"></RelativeLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
