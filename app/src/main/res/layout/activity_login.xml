@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_Fondo"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logoapp"/>
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/view_redonda_menu"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/usuario_blanco"
+                />
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="1dp"
+                android:alpha="0.8"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/ed_Usuario"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:hint="Correo"
+                android:textSize="20dp"
+                android:textColorHint="#99FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/view_redonda_menu"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/clave_blanco"
+                />
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="1dp"
+                android:alpha="0.8"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/ed_Clave"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:hint="Contraseña"
+                android:textSize="20dp"
+                android:textColorHint="#99FFFFFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_IniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:background="@drawable/view_redonda_amarilla"
+            android:text="Iniciar Sesión"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_Registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/c_Amarillo_Boton"
+            android:text="O registate aquí"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
