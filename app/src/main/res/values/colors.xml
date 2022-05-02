@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#454546</color>
 
     <color name="c_Fondo">#10032e</color>
     <color name="c_Fondo_Claro">#3e3754</color>

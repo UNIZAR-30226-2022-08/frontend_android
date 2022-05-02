@@ -1,6 +1,7 @@
 package eina.unizar.bibliochill.components;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -17,14 +18,21 @@ public class Casilla {
     int size;
     int colorBorder;
 
+    private Rect[] frames;
+    private Bitmap piezas;
+
+    TipoPieza pieza = TipoPieza.EMPTY;
+
     boolean selected = false;
 
-    public Casilla(Context context, int color, int row, int col, int size) {
+    public Casilla(Context context, int color, int row, int col, int size, Rect[] frames, Bitmap piezas) {
         this.color = color;
         this.row = row;
         this.col = col;
         this.size = size;
         this.colorBorder = context.getColor(R.color.c_Amarillo_Boton);
+        this.frames = frames;
+        this.piezas = piezas;
     }
 
     Rect getRect() {
@@ -44,6 +52,11 @@ public class Casilla {
         Paint paint = new Paint();
         paint.setColor(color);
         canvas.drawRect(getRect(), paint);
+
+        if(pieza != TipoPieza.EMPTY){
+            paint = new Paint();
+            canvas.drawBitmap(piezas, frames[pieza.ordinal()], getRect(), paint);
+        }
 
         if (selected){
             Paint border = new Paint();
