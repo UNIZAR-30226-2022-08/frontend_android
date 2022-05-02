@@ -10,6 +10,7 @@ import okhttp3.Response;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ public class Registro extends AppCompatActivity {
     TextView tv_CrearCuenta, tv_IniciarSesion;
     EditText ed_Usuario,ed_Clave,ed_Correo;
     public static final MediaType JSON
-            = MediaType.get("application/json; charset=utf-8");
+            = MediaType.parse("application/json; charset=utf-8");
 
     OkHttpClient client = new OkHttpClient();
 
@@ -73,6 +74,7 @@ public class Registro extends AppCompatActivity {
     }
 
     String postRegistro() throws IOException {
+        
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("email", ed_Correo.getText().toString())

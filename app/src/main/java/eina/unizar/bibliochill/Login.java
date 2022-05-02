@@ -11,6 +11,7 @@ import okhttp3.Response;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ import java.io.IOException;
 public class Login extends AppCompatActivity {
     TextView tv_Registarse, tv_IniciarSesion;
     public static final MediaType JSON
-            = MediaType.get("application/json; charset=utf-8");
+            = MediaType.parse("application/json; charset=utf-8");
 
     OkHttpClient client = new OkHttpClient();
 
