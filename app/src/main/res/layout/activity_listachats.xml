@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/c_Morado_Boton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ed_Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:text="Lista de Chats"
+                android:textColor="@color/white"
+                android:textColorHint="#99FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:maxWidth="300dp"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/fotoPerfil"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/view_redonda_perfil"
+                        android:src="@drawable/ejemploperfil" />
+
+                    <TextView
+                        android:id="@+id/ed_Usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat"
+                        android:maxWidth="300dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="20dp"
+                        android:text="Usuario 1"
+                        android:textColor="@color/black"
+                        android:textColorHint="#99FFFFFF"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:maxWidth="300dp"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/fotoPerfil2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/view_redonda_perfil"
+                        android:src="@drawable/ejemploperfil" />
+
+                    <TextView
+                        android:id="@+id/ed_Usuario2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat"
+                        android:maxWidth="300dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="20dp"
+                        android:text="Usuario 2"
+                        android:textColor="@color/black"
+                        android:textColorHint="#99FFFFFF"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
