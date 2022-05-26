@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_Fondo"
+    tools:context=".Perfil">
+
+    <ImageView
+        android:id="@+id/iv_atras"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/atras"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/view_redonda_perfil"
+            android:src="@drawable/ejemploperfil"/>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ELO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_redonda_amarilla"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="🏆 375"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_Monedas"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_redonda_amarilla"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="💰 45"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:text="Sesión iniciada desde Email"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/c_Amarillo_Boton"
+            android:text="chessmaster@hola.com"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:text="😀 Nombre"
+            android:textSize="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/view_redonda_menu"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed_Usuario"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:paddingHorizontal="20dp"
+                android:text="Ivan"
+                android:textSize="20dp"
+                android:textColorHint="#99FFFFFF"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:text="🔒 Contraseña"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/view_redonda_menu"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed_Clave"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:paddingHorizontal="20dp"
+                android:text="Ivan"
+                android:textSize="20dp"
+                android:textColorHint="#99FFFFFF"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:text="🔒 Repetir Contraseña"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/view_redonda_menu"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed_Repetir_Clave"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:paddingHorizontal="20dp"
+                android:text="Ivan"
+                android:textSize="20dp"
+                android:textColorHint="#99FFFFFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_IniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:background="@drawable/view_redonda_amarilla"
+            android:text="Guardar Cambios"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

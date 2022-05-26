@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/c_Morado_Boton"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fotoPerfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/view_redonda_perfil"
+                android:src="@drawable/ejemploperfil" />
+
+            <TextView
+                android:id="@+id/ed_Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="20dp"
+                android:text="Nombre"
+                android:textColor="@color/white"
+                android:textColorHint="#99FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Ejemplo de mensaje suyo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="300dp"
+                    android:background="@color/c_Morado_Claro"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:text="Hola que tal?"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+            <!-- Ejemplo de mensaje propio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="300dp"
+                    android:background="@color/gray_btn_bg_color"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:text="Hola que tal?"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/c_Morado_Boton"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/mensaje"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="Escribe tu mensaje..."
+                android:textColor="@color/white"
+                android:textColorHint="#99FFFFFF"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iconoEnviar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:src="@android:drawable/ic_menu_send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
